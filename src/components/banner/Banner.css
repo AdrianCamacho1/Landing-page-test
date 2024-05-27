@@ -1,0 +1,9 @@
+.section {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  #banner_section {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

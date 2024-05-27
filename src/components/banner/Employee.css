@@ -1,0 +1,65 @@
+.inkyy-employee {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+}
+
+
+.inkyy-employee > div {
+    position: absolute;
+    text-align: center;
+    z-index:99;
+}
+
+.inkyy-employee > div h3 {
+    font-family: "Autograf Persona";
+    font-size: 37px;
+    margin-top: 20px;
+    margin-bottom: -3px;
+}
+
+.inkyy-employee > div span {
+    font-size: 14px;
+    color: #8d8579;
+}
+
+
+
+.inkyy-employee__1 {
+    top: 2800%;
+    left: 15%;
+}
+
+.inkyy-employee__2 {
+    top: 1000%;
+    left: 80%;
+}
+
+.inkyy-employee__3 {
+    top: 4000%;
+    left: 80%;
+}
+
+  .img-anim .button {
+    width: 180px !important;
+    height: 230px !important;
+    overflow: hidden;
+    border-radius: 114px !important;
+    background: #ffdb1e !important;
+  }
+
+  .img-anim-2 .button2 {
+    width: 180px !important;
+    height: 230px !important;
+    overflow: hidden;
+    border-radius: 114px !important;
+    background: rgb(125, 116, 209) !important;
+  } 
+
+  .img-anim-3 .button3 {
+    width: 197px !important;
+    height: 290px !important;
+    overflow: hidden;
+    border-radius: 114px !important;
+    background: lightcoral !important;
+  } 
