@@ -1,46 +1,25 @@
-import React from 'react'
+import LandingPage from '../../assets/Landing_Page_Trends.png';
+import CoffeeMenu from '../../assets/CoffeeMenu.png';
+import WebUIUX from '../../assets/WebUIUX.png';
 
 export const Slider = () => {
+  const slides = [
+    { id: 1, image: LandingPage, title: 'Slide 1' },
+    { id: 2, image: CoffeeMenu, title: 'Slide 2' },
+    { id: 3, image: WebUIUX, title: 'Slide 3' },
+  ];
+
   return (
-    <div>
-        <h1>
-          
-        </h1>
+    <div className="flex flex-row overflow-x-auto"> {/* Main container with horizontal scrolling */}
+      {slides.map((slide) => (
+        <div key={slide.id} className="flex-shrink-0 w-1/3"> {/* Prevent shrinking, add margin-right */}
+          <img 
+          src={slide.image} 
+          alt={slide.title} 
+          className="w-5 h-5 object-cover" /> {/* Fixed width and height, maintain aspect ratio */}
+          <h2 className="text-center text-white text-2xl mt-4">{slide.title}</h2>
+        </div>
+      ))}
     </div>
   );
 };
-
-// Ai component "most likely we reverse engineer"
-
-// import React, { useState } from 'react';
-
-// const ImageSlider = ({ images, transitionTime = 0.5 }) => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   const handleNext = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
-//   };
-
-//   const handlePrev = () => {
-//     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-//   };
-
-//   const imageStyle = {
-//     transform: `translateX(-${currentIndex * 100}%)`,
-//     transition: `transform ${transitionTime}s ease-in-out`,
-//   };
-
-//   return (
-//     <div className="slider-container">
-//       <div className="slider-images" style={imageStyle}>
-//         {images.map((image, index) => (
-//           <img key={index} src={image} alt={`Slide ${index + 1}`} />
-//         ))}
-//       </div>
-//       <button className="prev-button" onClick={handlePrev}>Previous</button>
-//       <button className="next-button" onClick={handleNext}>Next</button>
-//     </div>
-//   );
-// };
-
-// export default ImageSlider;

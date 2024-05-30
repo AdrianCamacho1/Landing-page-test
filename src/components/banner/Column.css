@@ -42,3 +42,8 @@
   .button-magnetic {
     display: inline-flex;
   }
+
+  .my-button {
+    width: 5000px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }

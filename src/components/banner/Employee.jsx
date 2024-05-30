@@ -1,8 +1,8 @@
 import React from 'react'
 
 import dude from "../../assets/dude.png"
-import rice from "../../assets/Rice.png"
-import corn from "../../assets/Corn.png"
+import Rick from "../../assets/Rick.png"
+import Morty from "../../assets/Morty.png"
 
 import "./Employee.css"
 
@@ -25,7 +25,7 @@ export const Employee = () => {
           <div class="inkyy-employee__all--image">
             <div class="button-magnetic img-anim-2" >
               <div class="button2">
-                <img className='text' src={rice} alt='AC' />
+                <img className='text' src={Rick} alt='Rick' />
               </div>
             </div>
           </div>
@@ -36,7 +36,7 @@ export const Employee = () => {
           <div class="inkyy-employee__all--image">
             <div class="button-magnetic img-anim-3" >
               <div class="button3">
-              <img className='text' src={corn} alt='Corn' />
+              <img className='text' src={Morty} alt='morty' />
               </div>
             </div>
           </div>
