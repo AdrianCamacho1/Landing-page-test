@@ -6,7 +6,7 @@ import "./Banner.css"
 
 export const Banner = () => {
   return (
-    <section id="banner section" class="section">
+    <section id="banner section" className="section">
       <Employee />
       <Column />
     </section>

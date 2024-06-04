@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 h1 {
     font-size: 46px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -5,8 +9,15 @@ h1 {
     margin: 0;
 } 
 
+h2 {
+    font-size: 46px;
+    color: #040404;
+    font-weight: 400;
+    font-family: Tan-Official;
+}
+
 p {
-    display:block;
+    
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -14,7 +25,29 @@ p {
     unicode-bidi: isolate;
 }
 
+.slider {
+   width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+  
+.slider-item {
+    flex: 0 0 auto;
+}
+
+.designDev {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  
+.designDev-item {
+    flex: 0 0 auto;
+}
+
 * {
     padding: 0;
     font-family: "Poppins", sans-serif;
   }
+

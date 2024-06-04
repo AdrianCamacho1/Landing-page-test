@@ -10,13 +10,10 @@ export const Slider = () => {
   ];
 
   return (
-    <div className="flex flex-row overflow-x-auto"> {/* Main container with horizontal scrolling */}
+    <div className="flex flex-wrap">
       {slides.map((slide) => (
-        <div key={slide.id} className="flex-shrink-0 w-1/3"> {/* Prevent shrinking, add margin-right */}
-          <img 
-          src={slide.image} 
-          alt={slide.title} 
-          className="w-5 h-5 object-cover" /> {/* Fixed width and height, maintain aspect ratio */}
+        <div key={slide.id} className="section flex w-1/3"> 
+          <img src={slide.image} alt={slide.title} className="w-1/3 h-48 object-cover" />
           <h2 className="text-center text-white text-2xl mt-4">{slide.title}</h2>
         </div>
       ))}

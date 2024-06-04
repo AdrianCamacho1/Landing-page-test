@@ -10,7 +10,7 @@ export const Employee = () => {
   return (
     <section id="banner_section" class="section">
       <div className='inkyy-employee'>
-        <div className='inkyy-employee_all inkyy-employee__1' >
+        <div className='inkyy-employee_all inkyy-employee__1 ' >
           <div className='inkyy-employee_all--image'>
             <div className='button-magnetic img-anim'>
                 <div className='button' >
